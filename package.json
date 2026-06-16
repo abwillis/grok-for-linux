@@ -1,0 +1,117 @@
+{
+  "name": "grok-for-linux",
+  "version": "1.17.15",
+  "description": "grok for Linux",
+  "desktopName": "grok-for-linux",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux rpm",
+    "dist:deb": "electron-builder --linux deb",
+    "dist:win": "electron-builder --win nsis portable"
+  },
+  "build": {
+    "appId": "com.company.grok",
+    "productName": "grok-for-linux",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "main.bootstrap.js",
+      "app.config.js",
+      "preload.js",
+      "preload-core.js",
+      "renderer.js",
+      "package.json",
+      "assets/**",
+      "lib/**"
+    ],
+    "asarUnpack": [
+      "**/*.node",
+      "vendor/**",
+      "resources/**",
+      "assets/icons/*.png",
+      "assets/win/*.ico"
+    ],
+    "linux": {
+      "executableName": "grok-for-linux",
+      "syncDesktopName": true,
+      "target": [
+        {
+          "target": "rpm",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "category": "Utility",
+      "icon": "assets/icons",
+      "maintainer": "Name <name@mail.com>",
+      "vendor": "Name <name@mail.com>",
+      "synopsis": "grok Electron App",
+      "description": "grok for Linux",
+      "desktop": {
+        "entry": {
+          "Name": "grok-for-linux",
+          "Icon": "grok-for-linux",
+          "Type": "Application",
+          "Comment": "Unofficial Microsoft grok client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.",
+          "StartupWMClass": "grok-for-linux",
+          "Categories": "Network;Utility;Productivity"
+        }
+      }
+    },
+    "rpm": {
+      "artifactName": "${name}-${version}.${arch}.rpm",
+      "compression": "bzip2"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "cscLink": "C:/apps/certs/my_code_sign.pfx",
+      "cscKeyPassword": "WhatsnextforYou",
+      "icon": "assets/win/icon.ico",
+      "artifactName": "${productName}-${version}-Windows-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "grok-for-linux",
+      "deleteAppDataOnUninstall": false,
+      "installerIcon": "assets/win/icon.ico",
+      "uninstallerIcon": "assets/win/icon.ico",
+      "installerSidebar": null,
+      "uninstallerSidebar": null
+    },
+    "portable": {
+      "artifactName": "${productName}-${version}-Portable-${arch}.${ext}"
+    }
+  },
+  "homepage": "https://yourwebsite.com",
+  "author": {
+    "name": "Name",
+    "email": "name@mail.com"
+  },
+  "license": "BSD 3-Clause License",
+  "devDependencies": {
+    "electron": "^42.4.1",
+    "electron-builder": "^26.4.0"
+  },
+  "dependencies": {
+    "npm": "^11.7.0",
+    "turndown": "^7.2.2",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}
