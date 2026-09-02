@@ -1,14 +1,14 @@
-// preload.js — Copilot for Linux (app-specific wrapper)
+// preload.js — Grok for Linux (app-specific wrapper)
 'use strict';
 
 const { createIPC } = require('./lib/ipc');
 const { initPreload } = require('./lib/preload-core');
 
-const IPC = createIPC('copilot');
+const IPC = createIPC('grok');
 
 initPreload({
-  appSlug:             'copilot',
-  hostApiName:         'copilotHost',
+  appSlug:             'grok',
+  hostApiName:         'grokHost',
   IPC,
   enableDirectOpen:    true,
   enableHoverTooltips: true,
