@@ -1,6 +1,6 @@
 {
   "name": "grok-for-linux",
-  "version": "3.00.00",
+  "version": "3.00.04",
   "description": "Grok for Linux",
   "desktopName": "grok-for-linux",
   "main": "main.js",
@@ -22,7 +22,7 @@
       "app.config.js",
       "preload.js",
       "preload-core.js",
-      "renderer.js",
+      "renderer/**",
       "package.json",
       "assets/**",
       "lib/**"
