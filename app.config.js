@@ -4,8 +4,27 @@ const defaultAppConfig = Object.freeze({
   appUrl: 'https://grok.com',
   partition: String(process.env.GROK_PARTITION ?? 'persist:grok-for-linux').trim(),
   enableLayoutCss: true,
+  // Grok's expanded transcript is designed to use the full available width.
+  // Keep this aligned with dynamicWidth.defaultVw below.
+  layoutWidthVw: 100,
+  theme: 'system',
   enableDirectOpen: true,
+  directOpenBehavior: 'shift-click',
   enableQuickChat: true,
+  quickChatCloseBehavior: 'hide',
+  spellcheckEnabled: true,
+  spellcheckLanguages: ['en-US'],
+  permissionNotifications: 'ask',
+  permissionMedia: 'ask',
+  permissionGeolocation: 'ask',
+  permissionClipboardRead: 'ask',
+  launchAtLogin: false,
+  startMinimized: false,
+  showTrayIcon: true,
+  globalShortcutsEnabled: true,
+  globalShortcutShowMain: 'Ctrl+Alt+1',
+  globalShortcutNewQuickChat: 'Ctrl+Alt+N',
+  globalShortcutShowQuickChat: 'Ctrl+Alt+2',
   // Drop decorative UI icons (file-type glyphs on attachment/reference chips,
   // favicons) from exports instead of inlining them as base64. A measured
   // markdown export was 34% icon data -- 104 images, all file-type glyphs, for
@@ -104,7 +123,7 @@ const defaultAppConfig = Object.freeze({
 });
 
 module.exports = Object.freeze({
-  appLabel: 'grok',
+  appLabel: 'Grok',
   appSlug: 'grok',
   appName: 'grok-for-linux',
   appUserModelId: 'your.company.grok',

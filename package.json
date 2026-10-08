@@ -1,6 +1,6 @@
 {
   "name": "grok-for-linux",
-  "version": "3.00.06",
+  "version": "3.00.07",
   "description": "Grok for Linux",
   "desktopName": "grok-for-linux",
   "main": "main.js",
@@ -55,14 +55,14 @@
       "icon": "assets/icons",
       "maintainer": "Name <name@mail.com>",
       "vendor": "Name <name@mail.com>",
-      "synopsis": "grok Electron App",
-      "description": "grok for linux",
+      "synopsis": "Grok Electron App",
+      "description": "Grok for Linux",
       "desktop": {
         "entry": {
           "Name": "grok-for-linux",
           "Icon": "grok-for-linux",
           "Type": "Application",
-          "Comment": "Unofficial Microsoft grok client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.",
+          "Comment": "Unofficial xAI Grok client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.",
           "StartupWMClass": "grok-for-linux",
           "Categories": "Network;Utility;Productivity"
         }
@@ -71,6 +71,9 @@
     "rpm": {
       "artifactName": "${name}-${version}.${arch}.rpm",
       "compression": "bzip2"
+    },
+    "deb": {
+      "artifactName": "${name}-${version}.${arch}.deb"
     },
     "win": {
       "target": [
