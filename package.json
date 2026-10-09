@@ -1,11 +1,12 @@
 {
   "name": "grok-for-linux",
-  "version": "3.00.07",
+  "version": "3.00.08",
   "description": "Grok for Linux",
   "desktopName": "grok-for-linux",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "test": "node --test",
     "dist": "electron-builder --linux rpm",
     "dist:deb": "electron-builder --linux deb",
     "dist:win": "electron-builder --win nsis portable"
