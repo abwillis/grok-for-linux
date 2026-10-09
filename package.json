@@ -1,6 +1,6 @@
 {
   "name": "grok-for-linux",
-  "version": "3.00.09",
+  "version": "3.00.10",
   "description": "Grok for Linux",
   "desktopName": "grok-for-linux",
   "main": "main.js",
@@ -110,7 +110,7 @@
   },
   "license": "BSD 3-Clause License",
   "devDependencies": {
-    "electron": "^44.4.1",
+    "electron": "^44.7.0",
     "electron-builder": "^26.4.0"
   },
   "dependencies": {
