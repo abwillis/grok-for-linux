@@ -1,0 +1,29 @@
+{
+  "expectedRootId": "conversation-log",
+  "body": {
+    "children": [
+      {
+        "tag": "div",
+        "attrs": { "id": "__next" },
+        "children": [
+          {
+            "tag": "main",
+            "attrs": { "id": "grok-main", "class": "chat-shell", "role": "main" },
+            "children": [
+              {
+                "tag": "div",
+                "attrs": { "id": "conversation-log", "role": "log", "data-testid": "conversation-container" },
+                "children": [
+                  { "tag": "article", "attrs": { "role": "article", "data-testid": "user-message-1", "data-message-id": "grok-1" }, "text": "Grok question" },
+                  { "tag": "article", "attrs": { "role": "article", "data-testid": "bot-message-1", "data-message-id": "grok-2" }, "text": "Grok answer" },
+                  { "tag": "article", "attrs": { "role": "article", "data-testid": "user-message-2", "data-message-id": "grok-3" }, "text": "Grok follow-up" },
+                  { "tag": "article", "attrs": { "role": "article", "data-testid": "assistant-message-2", "data-message-id": "grok-4" }, "text": "Grok second answer" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

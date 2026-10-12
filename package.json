@@ -1,6 +1,6 @@
 {
   "name": "grok-for-linux",
-  "version": "3.00.10",
+  "version": "3.00.12",
   "description": "Grok for Linux",
   "desktopName": "grok-for-linux",
   "main": "main.js",
@@ -26,7 +26,8 @@
       "package.json",
       "assets/**",
       "lib/**",
-      "test/**"
+      "test/**",
+      "test-support/**"
     ],
     "asarUnpack": [
       "**/*.node",
