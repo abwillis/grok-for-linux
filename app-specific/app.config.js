@@ -156,7 +156,7 @@ module.exports = Object.freeze({
   partitionEnvVar: 'GROK_PARTITION',
   layoutObserverGlobal: '__grok_layoutObserver',
   rendererApiGlobal: '__grokRenderer',
-  rendererAgentVersion: 6,
+  rendererAgentVersion: 7,
 
   dynamicWidth: Object.freeze({
     cssVar: '--grok-vw',
