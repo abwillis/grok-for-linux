@@ -1,6 +1,6 @@
 {
   "name": "grok-for-linux",
-  "version": "3.00.24",
+  "version": "3.01.00",
   "description": "Grok for Linux",
   "desktopName": "grok-for-linux",
   "main": "main.js",
