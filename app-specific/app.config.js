@@ -154,6 +154,9 @@ module.exports = Object.freeze({
   iconFileName: 'grok-for-linux.png',
   trayToolTip: 'xAI Grok',
   partitionEnvVar: 'GROK_PARTITION',
+  // Additional origins treated as the app itself (none needed currently).
+  // Kept in sync with the Copilot config; see lib/permissions.js.
+  trustedOrigins: Object.freeze([]),
   layoutObserverGlobal: '__grok_layoutObserver',
   rendererApiGlobal: '__grokRenderer',
   rendererAgentVersion: 7,
