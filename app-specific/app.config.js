@@ -21,7 +21,7 @@ const defaultAppConfig = Object.freeze({
   launchAtLogin: false,
   startMinimized: false,
   showTrayIcon: true,
-  globalShortcutsEnabled: true,
+  globalShortcutsEnabled: false,
   globalShortcutShowMain: 'Ctrl+Alt+1',
   globalShortcutNewQuickChat: 'Ctrl+Alt+N',
   globalShortcutShowQuickChat: 'Ctrl+Alt+2',
@@ -57,7 +57,6 @@ const defaultAppConfig = Object.freeze({
   // No complete long-conversation snapshot crosses the renderer/main boundary.
   exportCaptureIpcChunkBytes: 524288,
   exportCaptureCallTimeoutMs: 30000,
-  defaultExportFormat: 'pdf',
   defaultPaneExportProfile: 'pdf',
   defaultSelectionExportProfile: 'pdf',
   // Paper treatment for generated HTML/PDF. "match" captures the live
@@ -150,7 +149,7 @@ module.exports = Object.freeze({
   appLabel: 'Grok',
   appSlug: 'grok',
   appName: 'grok-for-linux',
-  appUserModelId: 'your.company.grok',
+  appUserModelId: 'com.company.grok',
   iconFileName: 'grok-for-linux.png',
   trayToolTip: 'xAI Grok',
   partitionEnvVar: 'GROK_PARTITION',
@@ -166,7 +165,6 @@ module.exports = Object.freeze({
     minVw: 70,
     maxVw: 100,
     defaultVw: 100,
-    screenPercent: 95,
   }),
 
   defaultAppConfig,
