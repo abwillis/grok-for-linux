@@ -149,7 +149,7 @@ module.exports = Object.freeze({
   appLabel: 'Grok',
   appSlug: 'grok',
   appName: 'grok-for-linux',
-  appUserModelId: 'com.company.grok',
+  appUserModelId: 'com.local.grok',
   iconFileName: 'grok-for-linux.png',
   trayToolTip: 'xAI Grok',
   partitionEnvVar: 'GROK_PARTITION',
